@@ -1,0 +1,23 @@
+/* 基础公共样式，eg：清楚默认样式，设置网页基本样式 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+
+head{
+    color: #666666;
+}
+body{
+    font: 14px/1.5 "Microsoft Yahei","Hirgino Sans GB","WenQuanYi Micro Hei",sans-serif;
+    /* color: #666666; */
+    /* color: #fff; */
+}
+
+a{
+    color: #666666;
+    text-decoration: none;
+}

@@ -1,0 +1,435 @@
+/* 首页css样式 */
+.wrapper {
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+body {
+    background-color: #f3f5f7;
+}
+
+
+/* 头部区域 */
+.header{
+    height: 150px;
+    background-color: #fff;
+    border-bottom: 4px solid brown;
+}
+
+.header .wrapper {
+    background-image: url(../img/背景大图4.0.png);
+    background-size: 100% 100%;
+    background-attachment:fixed;
+    padding-top: 30px;
+    display: flex;
+}
+
+/* logo */
+.logo a{
+    display: block;
+    width: 120px;
+    height: 105px;
+    /* background-image: url(../img/logo.png); */
+    font-size: 0;
+}
+
+/* 导航 */
+.nav {
+    margin-left: 20px;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav li {
+    margin: 20px;
+}
+
+.nav li a {
+    display: block;
+    font-size: 26px;
+    line-height: 30px;
+    padding: 0 10px; 
+}
+
+/* 并集选择,shouye是类选择器，默认选中的a */
+.nav li a:hover{
+    border-bottom: 2px solid brown;
+}
+
+/* 搜索 */
+.sousuo{
+    outline: none;
+}
+.search {
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 20px;
+    margin-top: 25px;
+    height: 32px;
+    width: 350px;
+    background-color: #f3f3f7;
+    border-radius: 20px;
+}
+.search input {
+    flex: 1;
+    border: 0;
+    /* 透明色 */
+    background-color: transparent;
+    /* outline: none;这是去掉表单焦点框 */
+}
+
+.search button{
+    border: 0;
+}
+
+.user a {
+    margin-left: 20px;
+    padding-left: -100px;
+    padding-bottom: 500px;
+}
+
+.user img {
+    border-radius: 50%;
+    /* v-a是行内块和行内垂直方向对齐 */
+    vertical-align: middle;
+}
+
+.user span {
+    font-weight: 100;
+    color: #666;
+}
+
+/* bannder区域 */
+.bannder{
+    /* padding-top: 20px; */
+    height: 300px;
+    background-color: #d2d2d2;
+}
+
+.bannder .wrapper{
+    display: flex;
+    justify-content: space-between;
+    height: 240px;
+    background-image: url(../img/背景大图4.0.png);
+}
+
+/* 测导航 */
+.bannder .left {
+    padding: 5px 20px;
+    height: 280px;
+    width: 280px;
+    background-color: rgba(0,0,0,0.42);
+}
+
+.bannder .left a {
+    display: block;
+    line-height: 2;
+    font-size: 14px;
+    color: #fff;
+}
+
+.bannder .left a:hover {
+    color: brown;
+}
+
+.bannder .center{
+    padding: 5px 20px;
+    height: 280px;
+    width: 280px;
+    background-color: rgba(0,0,0,0.42);
+}
+
+.bannder .center a {
+    display: block;
+    line-height: 2;
+    font-size: 14px;
+    color: #fff;
+}
+
+.bannder .center a:hover{
+    color: brown;
+}
+
+.bannder .right {
+    padding: 5px 20px;
+    height: 280px;
+    width: 280px;
+    background-color: rgba(0,0,0,0.42);
+}
+
+.bannder .right a:hover{
+    color: brown;
+}
+
+.bannder .right a {
+    display: block;
+    line-height: 2;
+    font-size: 14px;
+    color: #fff;
+}
+
+.bannder{
+    border: 2px solid brown;
+}
+
+
+/* 好诗分享部分 */
+
+
+.poem {
+    padding: 30px;
+    /* background-image: url(../img/header.jpg); */
+    background-image: url(../img/背景大图bannder.png);
+    height: 200px;
+}
+
+.poem .wrapper {
+    /* background-color: rgba(0,0,0,0.32); */
+    display: flex;
+    height: 200px;
+    justify-content: space-around;
+}
+
+h3 {
+    color: brown;
+    line-height: 50px;
+}
+ .poem .wrapper a {
+    padding-right: 50px;
+    color: #666666;
+    font-size: large;
+}
+
+.poem .wrapper a:hover{
+    color: brown;
+}
+
+/* 小众诗词部分 */
+.less {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/背景大图4.0.png);
+    height: 866px;
+}
+/* 标题 */
+/* 公用标签不限制父级，可以一直使用 */
+ .hd {
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hd h3 {
+    line-height: 10px;
+}
+
+.hd .more {
+    color: #999;
+    line-height: 10px;
+}
+
+/* 内容 */
+.bd ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bd li {
+    margin-bottom: 20px;
+    background-color: pink;
+    height: 350px;
+    width: 250px;
+}
+
+.bd li .pic {
+    height: 200px;
+}
+
+.bd li .text {
+    padding: 20px;
+    height: 150px;
+    background-color: #fff;
+}
+
+.bd li .text h4 {
+    padding-top: 10px;
+    margin-bottom: 40px;
+    height: 30px;
+    line-height: 20px;
+    font-size: large;
+    font-weight: 500;
+}
+
+
+.bd li .text p {
+    font-size: 14px;
+    line-height: 15px;
+}
+
+/* 每日好诗 */
+/* 题头 */
+.good {
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-image: url(../img/二稿背景图.jpg); */
+    background-image: url(../img/背景大图4.0.png);
+    height: 433px;
+}
+
+.hd ul {
+    display: flex;
+}
+
+.hd  li{
+    font-weight: 500;
+    font-size: 15px;
+    margin: 60px;
+    margin-top: 0px;
+}
+
+
+/* 内容 */
+.good .recomend{
+    display: flex;
+    justify-content: space-between;
+    padding:30px;
+}
+
+.good .recomend .text1 {
+    font-size: 14px;
+}
+
+.good .hd a:hover{
+    color: brown;
+}
+
+/* 快讯 */
+.news .message{
+    margin-top: 60px;
+    flex-wrap: wrap;
+    background-color: pink;
+    display: flex;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-image: url(../img/二稿背景图.jpg); */
+    background-image: url(../img/背景大图4.0.png);
+}
+
+.news .message h2 {
+    color: brown;
+    padding-left: 80px;
+}
+
+.news  a {
+    line-height: 50px;
+    font-size: 15px;
+    color: #fff;
+}
+
+.news .message a:hover{
+    color: brown;
+}
+
+/* 结尾部分 */
+.last .llast {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 200px;
+}
+
+.last .llast .pic2 {
+    padding-top: 20px;
+}
+.last .llast  .text2{
+    margin-top: 30px;
+    font-size: 10px;
+}
+
+.last .llast .button1 {
+    margin-top: 30px;
+    border-radius: 20%;
+}
+
+.last .llast .left- .column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.last .one {
+    margin: 20px;
+}
+
+.last .two {
+    margin: 20px;
+}
+
+.last .three {
+    margin: 20px;
+    padding-left: -10px;
+}
+
+.last .column a:hover {
+    color: brown;
+}
+
+
+
+/* 二稿部分的css */
+.yiyan {
+    height: 1350px;
+    background-image: url(../img/背景大图4.0.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.shiren {
+    height: 2000px;
+    /* background-image: url(../img/背景大图4.0.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.shiren .hd {
+    background-image: url(../img/背景大图4.0.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bdd ul {
+    background-image: url(../img/背景大图4.0.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.bdd li {
+    height: 1000px;
+    width: 600px;
+    /* background-color: pink; */
+}
+
+.bdd li .picc {
+    height: 600px;
+    width: 600px;
+}
+
+.bdd li .textt {
+    height: 400px;
+    width: 600px;
+    background-image: url(0,0,0,0.3);
+}
+
+.right- {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
